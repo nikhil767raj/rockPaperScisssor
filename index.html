@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper and Scissor</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    
+    <!-- Display scores -->
+    
+        <div class="displayScores">
+             <div class="nameAndScores">
+                <div class="gameName">
+                    <p>ROCK</p>
+                    <p>PAPER</p>
+                    <p>SCISSOR</p>
+                </div>
+                <div class="computerScores">
+                    <p id="paraTitle">COMPUTER SCORE</p>
+                    <p class="currentComputerScores">0</p>
+                </div>
+                <div class="userScores">
+                    <p id="scoreTitle"> YOUR SCORE</p>
+                    <p class="currentUserScores">0</p>
+                </div>
+            </div> 
+        </div> 
+
+
+    <!-- Game Arena -->
+    <div id="gameArena">
+        <div class="signOfRock">
+            <img id="rockImage" src="/images/rock.png">
+        </div>
+        <div class="signOfScissor">
+            <img id="scissorImage" src="/images/scissor.png">
+        </div>
+        <div class="signOfPaper">
+            <img id="paperImage" src="/images/paper.png">
+        </div>
+    </div>
+
+    <div id="userWinImage">
+            <p id="winTitle">You WIN AGAINST PC</p>
+            <button id="playAgainUserWin">PLAY AGAIN YOU WIN</button>
+         
+    </div>
+    
+    <div id="computerWinImage">
+            <p id=="lostTitle">YOU LOST AGAINST PC</p>
+            <!-- <p id="FirstLine">YOU LOST</p>
+            <p id="SecondLine">AGAINST PC</p> -->
+            <button id="playAgainComputerWin">PLAY AGAIN YOU LOST </button>   
+    </div>
+
+
+    <div id="tieMatch">
+        <div id="tieTitle">
+            <p id="tieStatement">TIE UP</p>
+            <button id="tieMatchBtn">PLAY AGAIN</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Game Rule Collapsible code  -->
+    <button id="btn-id">RULES</button>
+    <div id="content">
+        <button class="close-button" onclick="closePage()">X</button>
+        <h2 id="heading">Game Rules</h3>
+            <div class="flex-container">
+                <div class="box1">
+                    <li type="square"></li>
+                </div>
+                <div>
+                    <p class="para">Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+                </div>
+            </div>
+            <br>
+            <div class="flex-container">
+                <div class="box1">
+                    <li type="square"></li>
+                </div>
+                <div>
+                    <p class="para">Agree ahead of time whether you 'll count off "rock,paper,scissors,
+                        shoot" or just rock,paper,scissors.</p>
+                </div>
+            </div>
+            <br>
+            <div class="flex-container">
+                <div class="box1">
+                    <li type="square"></li>
+                </div>
+                <div>
+                    <p class="para">Use rock,paper,scissors to settle minor decisions or simply play to pass
+                        the time.</p>
+                </div>
+            </div>
+            <br>
+            <div class="flex-container">
+                <div class="box1">
+                    <li type="square"></li>
+                </div>
+                <div>
+                    <p class="para">If both players lay down the same hand, each player lays down another
+                        hand.</p>
+                </div>
+            </div>
+    </div>
+
+    <button id="nextBtn">NEXT</button>
+
+    <div id="finalPage">
+        <img src="/images/Vector.png">
+        <img src="/images/Star 1.png">
+        <img src="/images/Star 2.png">
+        <img src="/images/Star 3.png">
+        <img src="/images/Star 5.png">
+        <img src="/images/Star 6.png">
+        <img src="/images/Star 7.png">
+        <img src="/images/Star 9.png">
+        <h1 id="displayHurray">HURRAY</h1>
+        <p id="paraWin">You WON THE GAME</p>
+        <button id="startMatch"> PLAY AGAIN</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

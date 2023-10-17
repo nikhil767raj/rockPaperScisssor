@@ -1,0 +1,447 @@
+body {
+    background-color: #8CC461;
+    margin: 0; 
+    padding: 0;
+    overflow: hidden;
+}
+
+#btn-id{
+  
+    position: fixed;
+    bottom: 4%; 
+    right: 2%; 
+    border: 2px solid #ffffff;
+    background-color: #8CC461;
+    color: white;
+    padding: 10px; 
+    cursor: pointer;
+    border-radius: 10px;
+    width: 119px;
+}
+
+#nextBtn{
+  display: none;
+  position: fixed;
+  bottom: 4%; 
+  right: 12%; 
+  border: 2px solid #ffffff;
+  background-color: #8CC461;
+  color: white;
+  padding: 10px; 
+  cursor: pointer;
+  border-radius: 10px;
+  width: 119px;
+}
+
+#content{  
+    position: fixed;
+    background: linear-gradient(0deg, #004429, #004429),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    color: #ffffff;
+    border: 7px solid #FFFFFF;
+    width: 20%;
+    height: 55%; 
+    bottom: 15%;
+    right: 4%;
+    display: block;
+    border-radius: 13px;
+    border-width: 1px, 1px, 1px, 1px;
+    border-style: solid;
+    border-color: #FFFFFF; 
+}  
+
+#heading{
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.box1 {
+  padding-left: 20px;
+}
+
+.para{
+  margin: -5px;
+  padding-right: 20px;
+}
+
+li[type="square"]::marker {
+  color: #FFD600;
+}
+
+.close-button {
+  position: absolute;
+  bottom: 95%;
+  height: 40px;
+  right: -7%;
+  border: 5px;
+  background: linear-gradient(0deg, #FF0000, #FF0000),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+  font-family: Dangrek;
+  font-size:x-large;
+  color: #ffffff;
+  cursor: pointer;
+} 
+
+.displayScores {
+  display: block;
+  position: relative;
+  width: 60%;
+  height: 140px;
+  top: 22px;
+  left: 240px;
+  border-radius: 13px;
+  border: 2px;
+  background-color: #8CC461;
+  border: 2px solid #FFFFFF;
+  padding-left: 10px;
+}
+
+.nameAndScores {
+  display: flex;
+}
+
+.gameArena{
+  display: block;
+}
+
+.gameName {
+  flex: 1;
+  font-family: Roboto;
+  color: #FFFFFF;
+  padding-left: 20px;
+  width: 135px;
+  height: 37px;
+  top: 78px;
+  left: 258px;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.computerScores{
+  width: 139px;
+  height: 108px;
+  top: 77px;
+  left: 713px;
+  border-radius: 9px;
+  background: #FFFFFF;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+.userScores{
+  width: 139px;
+  height: 108px;
+  top: 77px;
+  left: 713px;
+  border-radius: 9px;
+  background: #FFFFFF;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+#paraTitle{
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #656565;
+}
+
+#scoreTitle{
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #656565;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.currentComputerScores{
+text-align: center;
+font-family: Roboto;
+font-size: 38px;
+font-weight: 700; 
+letter-spacing: 0em;  
+color: #252525;
+margin-top: -15px;
+}
+
+.currentUserScores{
+  text-align: center;
+  font-family: Roboto;
+  font-size: 38px;
+  font-weight: 700; 
+  letter-spacing: 0em;  
+  color: #252525;
+  margin-top: 3px;
+}
+
+.signOfRock{
+  display: block;
+background-color: #ffffff;
+width: 80px;
+height: 80px;
+border: 16px solid #0074B6;
+border-radius: 50%;
+position: relative;
+left: 35%;
+top: 75px
+}
+
+.signOfScissor{
+  display: block;
+background-color: #ffffff;
+width: 80px;
+height: 80px;
+border: 16px solid #BD00FF;
+border-radius: 50%;
+position: relative;
+left: 55%;
+top: -38px
+}
+
+.signOfPaper{
+  display: block;
+  background-color: #ffffff;
+  width: 80px;
+  height: 80px;
+  border: 16px solid #FFA943;
+  border-radius: 50%;
+  position: relative;
+  left: 45%;
+  top: 75px
+  }
+
+#rockImage{
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  height: 45px;
+margin-top: 15px;
+margin-left: 15px;
+
+left: 25%;
+
+}
+#scissorImage{
+  display: block;
+  cursor: pointer;
+  /* position: relative; */
+  width: 40px;
+  height: 45px;
+  margin-top: 15px;
+  margin-left: 20px;
+  /* height: 58.51px; */
+  /* top: 351px;
+  left: 492px;  */
+  
+  }
+  #paperImage{
+    display: block;
+    cursor: pointer;
+    /* position: relative; */
+    width: 50px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 15px;
+    /* height: 58.51px; */
+    /* top: 351px;
+    left: 492px;  */
+}
+
+.lineRockScissor{
+  position: relative;
+  width: 150px;
+  top: -220px;
+  left: 43%;
+  border: 15px;
+  background: #000000A3;
+  border: 8px solid #000000A3;
+}
+
+.lineRockPaper{
+  width: 150px;
+top: 447px;
+left: 547px;
+border: 15px;
+transform: rotate(45deg);
+background: #000000A3;
+border: 15px solid #000000A3; 
+
+}
+
+#userWinImage{
+  display: none;
+  font-family: monospace;
+  /* Add other styling properties as needed */
+}
+
+#computerWinImage{
+  display: none;
+  font-family: monospace;
+}
+
+#gameArena{
+  display: block;
+}
+
+#FirstLine{
+  position: relative;
+  padding-top: 100px;
+  color: #ffffff;
+font-family: Roboto;
+font-size: 39px;
+font-weight: 800;
+/* line-height: 46px; */
+letter-spacing: 0.1em;
+text-align: center;
+padding-left: 20px;
+}
+#SecondLine{
+  font-family: Roboto;
+font-size: 25px;
+font-weight: 800;
+line-height: 29px;
+letter-spacing: 0.1em;
+text-align: center;
+color: #FFFFFF;
+margin-top: -30px;
+
+}
+
+#winTitle{
+  display: none;
+}
+
+#lostTitle{
+  display: none;
+}
+
+#computerWinHeading{
+  color: #ffffff;
+font-family: Roboto;
+font-size: 39px;
+font-weight: 800;
+letter-spacing: 0.1em;
+text-align: center;
+}
+
+#playAgainUserWin{
+  cursor: pointer;
+  position: relative;
+  width: 174px;
+  height: 44px;
+  left: 44%;
+  width: 174px;
+  height: 44px;
+  border-radius: 9px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  text-align: center;
+  color: #6B6B6B;
+
+}
+
+#playAgainComputerWin{
+cursor: pointer;
+position: relative;
+width: 174px;
+height: 44px;
+left: 44%;
+width: 174px;
+height: 44px;
+top: 547px;
+left: 570px; 
+border-radius: 9px;
+font-family: Roboto;
+font-size: 15px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0.1em;
+text-align: left;
+font-family: Roboto;
+font-size: 15px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0.1em;
+text-align: left;
+text-align: center;
+color: #6B6B6B;
+} 
+
+  
+#tieMatchBtn{
+  cursor: pointer;
+  position: relative;
+  width: 174px;
+  height: 44px;
+  left: 44%;
+    width: 174px;
+    height: 44px;
+    /* top: 547px;
+    left: 570px; */
+    border-radius: 9px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    font-family: Roboto;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  text-align: center;
+  color: #6B6B6B;
+}
+
+#tieMatch{
+  display: none;
+}
+
+#tieStatement{
+  position: relative;
+  padding-top: 100px;
+  color: #ffffff;
+font-family: Roboto;
+font-size: 39px;
+font-weight: 800;
+/* line-height: 46px; */
+letter-spacing: 0.1em;
+text-align: center;
+padding-left: 10px;
+
+}
+
+#finalPage{
+  display: none;
+}
